@@ -1,0 +1,186 @@
+.topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 1.5rem 0 calc(1.5rem / 2);
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+    .nav-1 {
+        display: flex;
+        align-items: center;
+        .hamburger {
+            padding: 0 1rem;
+        }
+        .hamburger-icon {
+            width: 20px;
+            height: 14px;
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+    
+            span {
+                background-color: #878a99;
+                position: absolute;
+                border-radius: 2px;
+                -webkit-transition: .3s cubic-bezier(.8,.5,.2,1.4);
+                transition: .3s cubic-bezier(.8,.5,.2,1.4);
+                width: 100%;
+                height: 2px;
+                display: block;
+                left: 0;
+            }
+        
+            span:nth-child(1) {
+                top: 0;
+                width: 80%;
+            }
+    
+            span:nth-child(2) {
+                top: 6px;
+                width: 100%;
+            }
+    
+            span:nth-child(3) {
+                bottom: 0;
+                width: 60%;
+            }
+        }
+
+        .relative {
+            position: relative;
+            input {
+                border: none;
+                height: 38px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 40px;
+                padding-right: 30px;
+                background-color: #f3f3f9;
+                font-size: .8125rem;
+                font-weight: 400;
+                line-height: 1.5;
+                border-radius: 0.25rem;
+            }
+            
+            svg {
+                position: absolute;
+                z-index: 10;
+                font-size: 18px;
+                line-height: 38px;
+                left: 13px;
+                bottom: 10.5px;
+                color: #878a99;
+            }
+        }
+    }
+
+    .nav-2 {
+        .left {
+            display: flex;
+            align-items: center;
+            .left-items {
+                width: 42px;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: .15s;
+                position: relative;
+
+                img {
+                    height: 20px;
+                    border-radius: 0.25rem!important;
+                }
+
+                .iconify {
+                    font-size: 22px !important;
+                    position: relative;
+                    color: #495057;
+                }
+
+                .num {
+                    position: absolute;
+                    right: 0px;
+                    top: -5px!important;
+                    font-size: 10px!important;    border-radius: 50rem!important;
+                    background-color: rgb(41,156,219);
+                    padding: 3.5px 6.5px;
+                    color: white;
+                    border-radius: 50rem!important;
+                }
+
+                .red {
+                    background-color: rgb(240,101,72);
+                }
+            }
+            .left-items:hover {
+                background-color: rgba(53,119,241,.1);
+                
+                .iconify {
+                    color: #3577f1 !important;
+
+                }
+            }
+
+            .user {
+                background-color: #f3f3f9;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                margin-left: 16px;
+
+                .user-1 {
+                    display: inline-block;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #212529;
+                    text-align: center;
+                    text-decoration: none;
+                    vertical-align: middle;
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    padding: 0.5rem 0.9rem;
+                    font-size: .8125rem;
+                    border-radius: 0.25rem;
+
+                    .span {
+                        display: flex;
+                        align-items: center;
+
+                        .user-img {
+                            border-radius: 50%;
+                            height: 32px;
+                            width: 32px;
+                            object-fit: cover;
+                        }
+
+                        .username {
+                            margin-left: 0.5rem!important;
+                            text-align: left!important;
+                            display: flex;
+                            flex-direction: column;
+
+                            .user-name {
+                                color: #495057;
+                                font-size: .8125rem;
+                                font-weight: 500;
+                            }
+
+                            .user-position {
+                                font-size: 12px!important;
+                                color: #878a99!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,96 @@
+.sidebar {
+    background-color: #405189;
+    width: 250px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgb(15 34 58 / 12%);
+    // padding: 0 0 calc(70px + 25px) 0;
+    z-index: 1002;
+
+
+    .venzo {
+        text-align: center;
+        padding: 0 1.3rem;
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: #405189;
+
+        .logo {
+            line-height: 70px;
+            text-align: center;
+    
+            img {
+                height: 17px;
+            }
+        }
+    }
+
+    .scrollbar, .menu {
+        position: relative;
+    }
+
+    ul {
+        list-style: none;
+        position: relative;
+
+        .nav-item{
+            padding: 5px 0;
+            transition: color .2s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+            cursor: pointer;
+        }
+
+        .nav-item:hover a {
+            color: white !important;
+        }
+        
+        .active {
+            color: white !important;
+        }
+        
+        .iconify-inline {
+            min-width: 1.75rem;
+            font-size: 18px;
+        }
+        
+        a {
+            background-color: #405189;
+            color: #919da9 !important;
+            font-size: .9375rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 24px;
+
+            .icon-dash {
+                min-width: 1.75rem;
+                font-size: 18px;
+            }
+
+            .nav-items {
+                display: flex;
+                align-items: center;
+                font-family: sans-serif !important;
+            }
+        }
+        
+        .menu-title {
+                padding: 0.625rem 1.5rem;
+                text-align: left;
+                letter-spacing: .05em;
+                cursor: default;
+                font-size: 11px;
+                text-transform: uppercase;
+                color: #919da9;
+                font-weight: 600;
+                position: relative;
+
+                .t-name, .nav-item {
+                    padding: 12px 20px;
+                    padding-left: 0;
+                }
+            }
+    }
+    
+}

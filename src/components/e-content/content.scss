@@ -1,0 +1,49 @@
+.content {
+    padding-top: 1px;
+
+    .page-title {
+        box-shadow: 0 1px 2px rgb(56 65 74 / 15%);
+        padding: 10px 1.5rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+            font-weight: 700;
+            font-size: 15px!important;
+            text-transform: uppercase;
+            color: #495057;
+        }
+
+        .page-title-right {
+            display: flex;
+            align-items: center;
+
+            .p-titles {
+                display: flex;
+                align-items: center;
+                padding-left: 0.5rem;
+
+                span {
+                    color: #878a99 !important;
+                    text-decoration: none;
+                    font-size: 0.8125rem;
+                }
+
+                .iconify {
+                    height: 15px;
+                    line-height: 20px;
+                    color: #878a99;
+                    padding-right: 8px;
+                }
+            }
+
+            a {
+                color: #495057 !important;
+                text-decoration: none;
+                font-size: 0.8125rem;
+            }
+        }
+    }
+}
