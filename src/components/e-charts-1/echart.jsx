@@ -24,7 +24,34 @@ class App extends Component {
   render() {
     return (
       <div className="e-chart">
-        <Chart options={this.state.options} series={this.state.series} type="bar" width={700} height={320} className="chart"/>
+        <div className="chart-top">
+          <div className="rev">Revenue</div>
+          <div className="num">
+            <div className="nums">All</div>
+            <div className="nums">1M</div>
+            <div className="nums">6M</div>
+            <div className="nums">1Y</div>
+          </div>
+        </div>
+        <div className="chart-header">
+          <div className="col6">
+            <h5>7,585</h5>
+            <p>Orders</p>
+          </div>
+          <div className="col6">
+            <h5>$22.89k</h5>
+            <p>Earnings</p>
+          </div>
+          <div className="col6">
+            <h5>367</h5>
+            <p>Refunds</p>
+          </div>
+          <div className="col6">
+            <h5 className='h5'>18.92%</h5>
+            <p>Conversation Ratio</p>
+          </div>
+        </div>
+        <Chart options={this.state.options} series={this.state.series} type="bar" height={320} className="chart"/>
       </div>
     )
   }

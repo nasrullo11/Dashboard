@@ -1,0 +1,102 @@
+.echarts4 {
+    width: 66.6%;
+    margin: 0 12px;
+    margin-left: 0;
+    background-color: white;
+    border-radius: .25rem .25rem 0 0;
+    box-shadow: 0 1px 2px rgb(56 65 74 / 15%);
+    padding-bottom: 12px !important;
+
+    .chart-top {
+        padding: 15.5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e9ebec;
+
+            .nums {
+                display: flex;
+                align-items: center;
+                color: #299cdb;
+                background-color: rgba(41,156,219,.1);
+                border-color: transparent;
+                padding: 4px 8px;
+                cursor: pointer;
+                font-size: .7109375rem;
+                border-radius: .2rem;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+            }
+
+            .nums:hover {
+                color: #fff;
+                background-color: #299cdb;
+            }
+        }
+        .table {
+            width: 100%;
+
+            table {
+                width: 100%;
+            }
+            
+            tr {
+                border-color: inherit;
+                border-style: solid;
+                border-width: 0;
+                
+                th {
+                    padding: 0.75rem 0.6rem;
+                    font-weight: 600;
+                    color: #878a99!important;
+                    font-size: 0.8125rem;
+                }
+
+                td {
+                    padding:  0.75rem 0.6rem;
+                    font-size: 0.8125rem;
+
+                    .fw-medium {
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+                    .link-primary {
+                        color: #405189;
+                    }
+
+                    .user img {
+                        height: 2rem;
+                        width: 2rem;
+                        border-radius: 50%!important;
+                        margin-right: 8px;
+                    }
+
+                    .badge-soft-success {
+                        color: #0ab39c;
+                        background-color: rgba(10,179,156,.1);
+                    }
+
+                    .badge-soft-warning {
+                        color: #f7b84b;
+                        background-color: rgba(247,184,75,.1);
+                    }
+
+                    .badge-soft-danger {
+                        color: #f06548;
+                        background-color: rgba(240,101,72,.1);
+                    }
+
+                    .fs-14 {
+                        font-size: 14px;
+                    }
+
+                    .fs-11 {
+                        font-size: 11px;
+                    }
+                }
+
+                th:first-child, td:first-child {
+                    padding-left: 16px;
+                }
+            }
+        }
+}

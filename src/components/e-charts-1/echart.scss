@@ -1,5 +1,75 @@
 .e-chart {
     background-color: white;
+    width: 66.6%;
+    margin: 0 12px;
+    margin-left: 0;
+    border-radius: .25rem .25rem 0 0;
+    box-shadow: 0 1px 2px rgb(56 65 74 / 15%);
+
+    .chart-top {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .num {
+            display: flex;
+            align-items: center;
+
+            .nums {
+                color: #3577f1;
+                background-color: rgba(53,119,241,.1);
+                padding: 4px 8px;
+                cursor: pointer;
+                border: 1px solid white;
+                font-size: .7109375rem;
+                border-radius: .2rem;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+            }
+
+            .nums:hover {
+                color: #fff;
+                background-color: #3577f1;
+            }
+        }
+    }
+
+    .chart-header {
+        display: flex;
+        align-items: center;
+
+        .col6 {
+            width: 25%;
+            padding: 1rem;
+            border: 1px dashed #e9ebec;
+            border-left: 0;
+            text-align: center;
+
+            h5 {
+                margin-bottom: .25rem!important;
+                color: #495057;
+                font-size: 1.015625rem;
+                font-weight: 500;
+            }
+
+            .h5 {
+                color: rgb(10,179,156);
+            }
+
+            p {
+                color: #878a99!important;
+                font-size: 0.8125rem;
+            }
+        }
+
+        .col6:last-child {
+            border-left: 1px;
+        }
+    }
+}
+
+.chart {
+    padding-top: 20px;
 }
 
 .chart svg path {

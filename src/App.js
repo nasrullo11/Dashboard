@@ -4,13 +4,14 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import Ecommerce from "./pages/Ecommerce/Ecommerce";
 import './App.scss'
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Sidebar />
-        <div className="container">
+        <div className="container1">
         <Topbar />
         <Ecommerce />
           {/* <Switch>
@@ -21,6 +22,7 @@ function App() {
               <Ecommerce />
             </Route>
           </Switch> */}
+        <Footer />
         </div>
       </Router>
     </div>

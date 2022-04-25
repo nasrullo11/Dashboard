@@ -1,0 +1,89 @@
+.echart2 {
+    background-color: white !important;
+    width: 33.3%;
+    height: 100%;
+    margin: 0px 12px;
+    border-radius: .25rem .25rem 0 0;
+    box-shadow: 0 1px 2px rgb(56 65 74 / 15%);
+
+    .chart-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        border-bottom: 1px solid #e9ebec;
+
+        h4 {
+            font-size: 16px;
+            margin: 0 0 7px 0;
+            color: #495057;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        a {
+            background-color: rgba(64,81,137,.1);
+            padding: 0.25rem 0.5rem;
+            font-size: .7109375rem;
+            border-radius: 0.2rem;
+            text-decoration: none;
+        }
+    }
+
+    .svg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .float {
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+        padding-bottom: 24px;
+
+        p {
+            font-size: 0.8125rem;
+            margin-top: 15px;
+            margin-bottom: 8px;
+
+            span {
+                float: right;
+            }
+        }
+
+        .load {
+            width: 100%;
+            height: 6px;
+            margin-top: 2px;
+            background-color: #eff2f7;
+            overflow: hidden;
+            font-size: .609375rem;
+            border-radius: 0.25rem;
+            display: flex;
+            position: relative;
+
+        }
+        .loader {
+            background-color: #3a497b;
+            background-size: 0.625rem 0.625rem;
+            height: 6px;
+            width: 75%;
+            position: absolute;
+            left: 0;
+
+            .loader1 {
+                // width: 100%;
+                height: 100%;
+                background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+            }
+        }
+
+        .loader_1 {
+            width: 47%;
+        }
+
+        .loader_2 {
+            width: 82%;
+        }
+    }
+}

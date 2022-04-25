@@ -4,4 +4,21 @@
     .page-title {
         padding: 10px 1.5rem;
     }
+
+    .e-charts {
+        display: flex;
+        width: 100%;
+        margin-bottom: 24px !important;
+
+        .e-chart-1 {
+            width: 66.66666667%;
+            padding: 0 12px;
+        }
+
+        .e-chart-2 {
+            width: 33.3%;
+            padding: 0 12px;
+            background-color: white;
+        }
+    }
 }

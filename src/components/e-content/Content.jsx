@@ -3,7 +3,7 @@ import './content.scss'
 const Content = () => {
   return (
     <div className='content'>
-      <div className="row">
+      <div className="row1">
         <div className="page-title">
           <h4>Dashboard</h4>
           <div className="page-title-right">
